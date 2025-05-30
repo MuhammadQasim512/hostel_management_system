@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Default Content area style */
+.content {
+  min-height: 100vh;
+  padding: calc(var(--phoenix-navbar-top-height) + 2rem) 1.5rem 6.375rem 1.5rem;
+  position: relative;
+  padding-bottom: 6rem;
+  margin-left: 250px; /* Adjust this value to match the sidebar width */
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition when sidebar collapses */
+}
+
+/* Optional: Smaller margin-left for collapsed sidebar */
+.content.collapsed {
+  margin-left: 70px; /* Adjust this value to match collapsed sidebar width */
+}
+
+/* Media Query for Smaller Screens (Mobile) */
+@media (max-width: 768px) {
+  /* Adjust the content margin-left for smaller screens */
+  .content {
+    margin-left: 0; /* Remove margin for mobile to fit sidebar */
+    padding: calc(var(--phoenix-navbar-top-height) + 2rem) 1.5rem 6.375rem 1.5rem; /* Adjust if necessary */
+  }
+
+  /* Ensure the content area is full width on mobile */
+  .content {
+    margin-left: 0; /* Full-width content without sidebar on mobile */
+  }
+
+}
+
+

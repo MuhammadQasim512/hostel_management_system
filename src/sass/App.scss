@@ -1,0 +1,226 @@
+@import './variables';
+
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.update {
+  width: 600px;
+  height: 330px;
+  margin: 20px 90px;
+  top: 5px;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #555;
+
+  }
+
+  input {
+    width: 100%; // Full width input fields
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
+
+// .menu-item.active {
+//   background: $primary;
+//   /* Blue Background for Active Item */
+//   font-weight: bold;
+//   // border-left: 5px solid white;
+// }
+
+// .modal-btn {
+//   background-color: $primary ;
+//   border: none;
+//   border-radius: 5px;
+//   color: $menu-color;
+// }
+
+// Edit and delete btn
+.edit {
+  // display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: $menu-color;
+  background-color: $primary;
+  border: none;
+  border-radius: 3px;
+  margin: 1%;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+}
+
+.delete {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: $menu-color;
+  background-color: $danger-color;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  // Tablet & mobile
+  .edit,
+  .delete {
+    width: 100%; // Full width on small screens
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  // Mobile-specific tweaks
+  .edit,
+  .delete {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #299d92;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+
+    li {
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #4cd8ca;
+      }
+    }
+  }
+
+  .auth-links {
+    display: flex;
+
+    button {
+      padding: 8px 13px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-right: 10px;
+    }
+
+    .login-btn {
+      background: white;
+      color: #2c3e50;
+    }
+
+    .signup-btn {
+      background: white;
+      color: #2c3e50;
+    }
+  }
+
+  // Mobile Styling
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .nav-links {
+      flex-direction: column;
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
+}
+
+/* 
+heading : Room Status
+total room: 12
+capacity per room : 3
+Available room : 2
+
+
+
+*/
+// .dashboard {
+//   background-Color: '#ffffff';
+//           height: '220px';
+//           width: '100%';
+//           padding: '16px';
+//           border-Radius: '16px';
+//           box-Shadow: '0 6px 12px rgba(0, 0, 0, 0.1)';
+//           display: 'flex';
+//           flex-Direction: 'column';
+//           justify-Content: 'space-between';
+//           transition: 'all 0.3s ease';
+//           border-Left: 6px solid ${color}`;
+//           cursor: 'pointer;
+// }
+
+.dashboard2 {
+  display: flex;
+  gap: 20px;
+  justify-Content: center
+}

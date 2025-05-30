@@ -1,0 +1,56 @@
+@import './variables';
+
+
+
+// src/components/Services.scss
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: $secondary-color;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: $primary-color;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    h3 {
+      margin: 15px 0 10px;
+      color: $primary-color;
+    }
+
+    p {
+      padding: 0 15px 20px;
+      color: #444;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

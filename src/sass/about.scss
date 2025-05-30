@@ -1,0 +1,124 @@
+@import './variables';
+
+// .about-page {
+//     text-align: center;
+//     padding: 40px;
+//     background: #f9f9f9;
+
+//     h2 {
+//         font-size: 32px;
+//         margin-bottom: 20px;
+//         color: #2a9d8f;
+//     }
+// }
+
+// .about-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 20px;
+//     max-width: 900px;
+//     margin: auto;
+// }
+
+// .about-image {
+//     width: 50%;
+//     height: auto;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .about-text {
+//     max-width: 50%;
+//     text-align: left;
+
+//     h3 {
+//         margin-top: 15px;
+//         font-size: 22px;
+//         color: #264653;
+//     }
+
+//     p {
+//         font-size: 16px;
+//         color: #555;
+//     }
+
+//     ul {
+//         list-style: none;
+//         padding: 0;
+
+//         li {
+//             font-size: 16px;
+//             margin: 5px 0;
+//         }
+//     }
+// }
+
+.about-page{
+
+    .h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #2a9d8f;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 100%;
+}
+
+
+.about-image {
+    width: 45%;
+    cursor: pointer;
+    /* Adjust width */
+    // height: auto;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+    margin-left: 2rem;
+
+    h3 {
+        margin-top: 15px;
+        font-size: 22px;
+        color: #264653;
+    }
+
+    p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+}

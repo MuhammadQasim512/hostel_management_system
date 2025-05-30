@@ -1,0 +1,120 @@
+@import './variables';
+
+// Login Page Styles
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+
+
+    .login-content {
+        width: 800px;
+        padding: 2rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        justify-content: center;
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+
+            &:focus {
+                outline: none;
+                border-color: black;
+                box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+            }
+        }
+
+        .forget-container {
+            display: flex;
+            justify-content: end;
+
+            .forget {
+                font-size: 16px;
+                color: #299d92;
+                cursor: pointer;
+                margin-top: 5px;
+                text-decoration: none;
+
+
+                &:hover {
+                    color: #22dac7;
+                }
+            }
+        }
+
+        // Stylish Login Button
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #299d92;
+            }
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+
+            a {
+                color: #299d92;
+                font-weight: bold;
+                text-decoration: none;
+                transition: color 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    color: #34d6c6;
+                }
+            }
+        }
+    }
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #299d92;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

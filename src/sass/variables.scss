@@ -1,0 +1,25 @@
+$menu-bg: #191919;
+$menu-color: white;
+$menu-hover-bg: #262626;
+$primary : #299d92;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$danger-color: #ae0000;
+$success-color: #28a745;
+
+
+.menu-item.active {
+    background: $primary;
+    /* Blue Background for Active Item */
+    font-weight: bold;
+    // border-left: 5px solid white;
+}
+
+.modal-btn {
+    background-color: $primary ;
+    border: none;
+    border-radius: 5px;
+    color: $menu-color;
+}
+
+
